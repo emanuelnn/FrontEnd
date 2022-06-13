@@ -1,44 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vida selvagem</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu livro de receitas</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
+<body>
 
-
-
-<body class="dark">
-
-  <h1>A família dos felinos</h1>
-
-  <div class="data">
-    <div class="imputsMain">
-      <form>
-        <div class="imputs">
-          <label>Título &nbsp</label>
-          <div class="title"><input type="text" name="titulo" id="titulo"></div>
-          <label>Descrição &nbsp</label>
-          <div class="descrição"><input type="text" name="texto" id="texto"></div>
-          <label>URL &nbsp</label>
-          <div class="url"><input type="url" name="link" id="url"></div>
-          <div><button onclick="start()">botão</button></div>
+    <div class = "flex">
+    <div class="containerReceita">
+        <div class="containerPagina">
+            <div class="imagemDaPagina">
+                <img src="assets/img/undraw_cooking_lyxy (1).svg" alt="Imagem culinária">
+            </div>
         </div>
-      </form>
     </div>
-  </div>
 
-  <div class="container"></div>
+    <div class="formulario">
+        <form action="#">
+            <div class="header">
+                <div class="title">
+                    <h1>Cadastre suas receitas</h1>
+                </div>
+            </div>
 
+                <div class="inputs">
+                    <div class="inputSpace">
+                        <label for="nomeDaReceita">Nome da receita</label>
+                        <input id="titulo" type="text" name="titulo" placeholder="Nome da sua receita" required>
+                    </div>
 
+                    <div class="inputSpace">
+                        <label for="imagemDaReceita">Foto da receita</label>
+                        <input id="url" type="url" name="url" placeholder="URL da foto da receita" required>
+                    </div>
 
-  <script src="./main.js"></script>
+                    <div class="inputSpace">
+                        <label for="ingredientes">Ingredientes</label>
+                        <input id="ingredientes" type="text" name="ingredientes" placeholder="Ingredientes da receita" required>
+                    </div>
 
+                    <div class="inputSpace">
+                        <label for="modoDePreparo">Modo de preparo</label>
+                        <input id="modo" type="text" name="modo" placeholder="Modo de preparo" required>
+                    </div>
+                </div>
+        <div class="botaoAdicionar">
+            <button class="my-btn" id="novaPostagem"><a href="#"> Adicionar Receita</a></button>
+        </div>
+        </form>
 
+    </div>
+</div>
+    <div class="containerReceita2">
+        <div class="titleReceitas">
+            <h2>Receitas Salvas</h2>
+        </div>
+        <div class="container">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
