@@ -131,7 +131,7 @@ body{
 
 .titleReceitas{
     padding: 20px;
-    width:80%;
+    width:100%;
     height: 15%;
     font-size: 22px;
     text-align: center;
@@ -150,22 +150,17 @@ body{
     padding: 20px 0;
 }
 
-.posta {
-    width: 42%;
-    height: 70%;
-    background-color: #bcbcbc;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
 .item {
 
-    width: 40%;
+    width: 30%;
     background-color: white;
     box-sizing: border-box;
     padding: 2%;
 /*  margin-bottom: 100px; */
     border-radius: 5px;
     border: 1px solid lightgray;
+  }
+
+  #img img{
+    width: 100%;
   }
